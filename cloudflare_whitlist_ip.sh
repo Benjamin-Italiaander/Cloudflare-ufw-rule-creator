@@ -1,6 +1,11 @@
 #!/bin/sh
+# This bash script adds UFW rules so Cloudflare can acces from all it's proxy adresses. 
+
+
 ufw disable
-yes | ufw reset
+
+# You might like to reset UFW to only allow http and https from cloudflare, you might lock yourself out.
+# yes | ufw reset
 
 
 # Download adresslist from cloudflare
